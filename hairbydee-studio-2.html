@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAIRBYDEE Studio | Luxury Hair Braiding | UK</title>
+  <meta name="description" content="HAIRBYDEE Studio — luxury hair braiding in the UK. Knotless braids, Fulani braids, Goddess braids and more. Book your appointment via WhatsApp today." />
+  <meta property="og:title" content="HAIRBYDEE Studio | Luxury Hair Braiding" />
+  <meta property="og:description" content="Hair that looks effortless because we put the effort in. Book your appointment today." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --black: #0f0f0f;
+      --charcoal: #1a1a1a;
+      --charcoal-mid: #242424;
+      --charcoal-light: #2e2e2e;
+      --rose-gold: #c9a0a0;
+      --rose-light: #e8b4b8;
+      --rose-pale: #f0d4d6;
+      --purple: #9b8ea8;
+      --purple-light: #b5a9c0;
+      --white: #f5f5f5;
+      --white-dim: #d4d4d4;
+      --border: 1px solid rgba(201,160,160,0.2);
+      --border-strong: 1px solid rgba(201,160,160,0.45);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Raleway', sans-serif;
+      --transition: all 0.35s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--charcoal); }
+    ::-webkit-scrollbar-thumb { background: var(--rose-gold); border-radius: 2px; }
+
+    /* ─── TYPOGRAPHY ─── */
+    h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; line-height: 1.15; }
+    h1 { font-size: clamp(2.8rem, 7vw, 5.5rem); letter-spacing: 0.02em; }
+    h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); letter-spacing: 0.03em; }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+    p { font-weight: 300; color: var(--white-dim); }
+
+    /* ─── UTILITY ─── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      margin-bottom: 0.75rem;
+    }
+    .divider { border: none; border-top: var(--border); margin: 0; }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #c9a0a0, #e8b4b8, #c9a0a0);
+      background-size: 200% 200%;
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+    .btn-primary:hover {
+      background-position: right center;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(201,160,160,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--rose-gold);
+      border: var(--border-strong);
+    }
+    .btn-outline:hover {
+      background: rgba(201,160,160,0.08);
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: white;
+      font-size: 0.9rem;
+      padding: 16px 40px;
+    }
+    .btn-whatsapp:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 35px rgba(37,211,102,0.3);
+    }
+    .btn-sm {
+      padding: 9px 22px;
+      font-size: 0.72rem;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: var(--border);
+      transition: var(--transition);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 72px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .nav-brand {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .nav-brand span { color: var(--rose-gold); }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      align-items: center;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 4px;
+      transition: var(--transition);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: var(--rose-gold);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--rose-gold); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--rose-gold); }
+    .nav-links a.active::after { width: 100%; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 1.5px;
+      background: var(--rose-gold);
+      transition: var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      background: rgba(10,10,10,0.97);
+      border-top: var(--border);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      padding: 18px 32px;
+      border-bottom: var(--border);
+      transition: var(--transition);
+    }
+    .mobile-menu a:hover { color: var(--rose-gold); background: rgba(201,160,160,0.04); }
+
+    /* ─── PAGE MANAGEMENT ─── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 72px;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 20% 50%, rgba(155,142,168,0.12) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 20%, rgba(201,160,160,0.1) 0%, transparent 50%),
+                  var(--black);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a0a0' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.4;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+      padding: 80px 32px;
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-text { position: relative; z-index: 1; }
+    .hero-text .section-label { margin-bottom: 1.2rem; }
+    .hero-title {
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      line-height: 1.05;
+    }
+    .hero-title em { color: var(--rose-gold); font-style: italic; }
+    .hero-sub {
+      font-family: var(--serif);
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      color: var(--white-dim);
+      font-style: italic;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    .hero-images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 480px;
+    }
+    .hero-img-wrap {
+      position: absolute;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--rose-gold);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 6px rgba(201,160,160,0.08);
+      transition: var(--transition);
+    }
+    .hero-img-wrap:hover { transform: scale(1.03); z-index: 10; }
+    .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero-img-1 { width: 240px; height: 240px; top: 20px; left: 50%; transform: translateX(-50%); }
+    .hero-img-2 { width: 190px; height: 190px; bottom: 30px; left: 5%; }
+    .hero-img-3 { width: 190px; height: 190px; bottom: 30px; right: 5%; }
+
+    /* ─── ABOUT ─── */
+    .about { padding: 110px 0; border-top: var(--border); }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .about-accent-line {
+      width: 60px; height: 1px;
+      background: linear-gradient(90deg, var(--rose-gold), transparent);
+      margin-bottom: 1.5rem;
+    }
+    .about-text h2 { margin-bottom: 1.5rem; color: var(--white); }
+    .about-text p { margin-bottom: 1.2rem; line-height: 1.85; }
+    .about-text .btn { margin-top: 0.5rem; }
+    .about-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+    .about-stat {
+      background: var(--charcoal-mid);
+      border: var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .about-stat:hover { border-color: rgba(201,160,160,0.5); transform: translateY(-4px); }
+    .about-stat .num {
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      color: var(--rose-gold);
+      display: block;
+    }
+    .about-stat .lbl {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      margin-top: 4px;
+    }
+    .about-stat.wide { grid-column: span 2; }
+
+    /* ─── GALLERY ─── */
+    .gallery { padding: 100px 0; border-top: var(--border); }
+    .section-header { text-align: center; margin-bottom: 60px; }
+    .section-header h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .section-header p { max-width: 480px; margin: 0 auto; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .gallery-item {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(201,160,160,0.3);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .gallery-item:hover {
+      border-color: var(--rose-gold);
+      transform: scale(1.04);
+      box-shadow: 0 20px 60px rgba(201,160,160,0.2);
+    }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .gallery-item:hover img { transform: scale(1.08); }
+
+    /* ─── SERVICES PREVIEW ─── */
+    .sig-styles { padding: 100px 0; border-top: var(--border); background: var(--charcoal); }
+    .sig-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .sig-card {
+      background: var(--charcoal-mid);
+      border: var(--border);
+      border-radius: 16px;
+      padding: 36px 24px 28px;
+      text-align: center;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .sig-card:hover {
+      border-color: var(--rose-gold);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .sig-card-icon {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: rgba(201,160,160,0.1);
+      border: var(--border-strong);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+    }
+    .sig-card h3 {
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+    }
+    .sig-card a {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,160,160,0.3);
+      padding-bottom: 2px;
+      transition: var(--transition);
+    }
+    .sig-card a:hover { color: var(--rose-light); border-color: var(--rose-light); }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonials { padding: 100px 0; border-top: var(--border); }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .testi-card {
+      background: var(--charcoal-mid);
+      border: var(--border);
+      border-radius: 20px;
+      padding: 36px 32px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .testi-card::before {
+      content: '"';
+      position: absolute;
+      top: -10px; right: 20px;
+      font-family: var(--serif);
+      font-size: 8rem;
+      color: rgba(201,160,160,0.07);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .testi-card.featured {
+      border-color: rgba(201,160,160,0.4);
+      background: linear-gradient(135deg, var(--charcoal-mid), rgba(201,160,160,0.05));
+    }
+    .testi-card:hover { border-color: rgba(201,160,160,0.4); transform: translateY(-4px); }
+    .stars { color: var(--rose-gold); font-size: 0.9rem; margin-bottom: 1rem; letter-spacing: 3px; }
+    .testi-card blockquote {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--white-dim);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .testi-author {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--charcoal);
+      border-top: var(--border);
+      padding: 60px 0 30px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      border-bottom: var(--border);
+    }
+    .footer-brand { }
+    .footer-brand .brand-name {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+    .footer-brand .brand-name span { color: var(--rose-gold); }
+    .footer-brand p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .social-icons { display: flex; gap: 14px; margin-bottom: 1.5rem; }
+    .social-icon {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: var(--border-strong);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--rose-gold);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .social-icon:hover { background: var(--rose-gold); color: var(--charcoal); border-color: var(--rose-gold); }
+    .footer-nav h4 {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      margin-bottom: 1.2rem;
+    }
+    .footer-nav ul { list-style: none; }
+    .footer-nav ul li { margin-bottom: 0.8rem; }
+    .footer-nav ul a {
+      font-size: 0.88rem;
+      color: var(--white-dim);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .footer-nav ul a:hover { color: var(--rose-gold); }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(212,212,212,0.4);
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── PAGE 2: PRICES ─── */
+    .prices-hero {
+      padding: 140px 32px 80px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,160,160,0.08) 0%, transparent 60%), var(--black);
+      border-bottom: var(--border);
+    }
+    .prices-hero h1 { color: var(--white); margin-bottom: 0.75rem; }
+    .prices-hero p { font-family: var(--serif); font-style: italic; font-size: 1.15rem; }
+    .prices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 32px;
+    }
+    .price-card {
+      background: var(--charcoal-mid);
+      border: var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .price-card:hover {
+      border-color: var(--rose-gold);
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,160,160,0.15);
+    }
+    .price-card-name {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .price-tag {
+      font-family: var(--sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--rose-gold);
+      letter-spacing: 0.05em;
+    }
+    .price-desc {
+      font-size: 0.85rem;
+      color: var(--white-dim);
+      flex: 1;
+    }
+    .price-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(212,212,212,0.45);
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto 60px;
+      padding: 0 32px;
+      line-height: 1.7;
+    }
+    .cta-banner {
+      background: linear-gradient(135deg, var(--charcoal), rgba(201,160,160,0.08), var(--charcoal));
+      border-top: var(--border);
+      border-bottom: var(--border);
+      padding: 80px 32px;
+      text-align: center;
+    }
+    .cta-banner h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .cta-banner p { margin-bottom: 2rem; }
+
+    /* ─── PAGE 3: BOOKING & CONTACT ─── */
+    .booking-hero {
+      padding: 140px 32px 80px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(155,142,168,0.1) 0%, transparent 60%), var(--black);
+      border-bottom: var(--border);
+    }
+    .booking-hero h1 { color: var(--white); margin-bottom: 0.75rem; }
+    .booking-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 32px;
+    }
+    .policy-section { margin-bottom: 80px; }
+    .policy-section h2 { color: var(--white); margin-bottom: 2rem; }
+    .policy-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    .policy-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: var(--charcoal-mid);
+      border: var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      transition: var(--transition);
+    }
+    .policy-list li:hover { border-color: rgba(201,160,160,0.35); }
+    .policy-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .policy-text { font-size: 0.92rem; color: var(--white-dim); line-height: 1.6; }
+    .policy-text strong { color: var(--white); display: block; margin-bottom: 3px; font-weight: 500; }
+    .whatsapp-section {
+      text-align: center;
+      padding: 70px 0;
+      border-top: var(--border);
+      margin-bottom: 70px;
+    }
+    .whatsapp-section h2 { color: var(--white); margin-bottom: 1rem; }
+    .whatsapp-section p { max-width: 480px; margin: 0 auto 2rem; }
+    .contact-section {
+      background: var(--charcoal-mid);
+      border: var(--border);
+      border-radius: 24px;
+      padding: 50px 40px;
+      margin-bottom: 80px;
+    }
+    .contact-section h2 { color: var(--white); margin-bottom: 2rem; }
+    .contact-items { display: flex; flex-direction: column; gap: 18px; }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .contact-item-icon {
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      border: var(--border-strong);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--rose-gold);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .contact-item a {
+      color: var(--white-dim);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+    .contact-item a:hover { color: var(--rose-gold); }
+    .page3-gallery {
+      padding: 0 0 80px;
+      border-top: var(--border);
+      padding-top: 80px;
+    }
+    .page3-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .page3-gallery-item {
+      border-radius: 16px;
+      overflow: hidden;
+      border: var(--border);
+      aspect-ratio: 3/4;
+      transition: var(--transition);
+    }
+    .page3-gallery-item:hover {
+      border-color: var(--rose-gold);
+      transform: scale(1.02);
+    }
+    .page3-gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* ─── ANIMATIONS ─── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+    .fade-in-delay-4 { transition-delay: 0.4s; }
+
+    /* ─── GRAIN OVERLAY ─── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.018;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 180px 180px;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .sig-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-top .footer-brand { grid-column: span 2; }
+      .page3-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .page3-gallery-grid .page3-gallery-item:nth-child(4),
+      .page3-gallery-grid .page3-gallery-item:nth-child(5) { grid-column: span 1; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+      .hero-images { height: 200px; justify-content: center; }
+      .hero-img-1 { width: 130px; height: 130px; top: 0; left: 50%; transform: translateX(-50%); }
+      .hero-img-2 { display: none; }
+      .hero-img-3 { display: none; }
+      .hero-images-row {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 40px;
+      }
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .sig-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+      .footer-top .footer-brand { grid-column: 1; }
+      .page3-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-visual { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .prices-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .sig-grid { grid-template-columns: 1fr; }
+      .page3-gallery-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAV ═══ -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" onclick="showPage('home')">HAIRBYDEE <span>Studio</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('home')" class="nav-link active" data-page="home">Home</a></li>
+      <li><a href="#" onclick="showPage('prices')" class="nav-link" data-page="prices">Styles &amp; Prices</a></li>
+      <li><a href="#" onclick="showPage('booking')" class="nav-link" data-page="booking">Booking &amp; Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" onclick="showPage('home'); closeMenu();">Home</a>
+    <a href="#" onclick="showPage('prices'); closeMenu();">Styles &amp; Prices</a>
+    <a href="#" onclick="showPage('booking'); closeMenu();">Booking &amp; Contact</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ PAGE 1: HOME ═══════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text fade-in">
+        <p class="section-label">London's Premier Braiding Studio</p>
+        <h1 class="hero-title">HAIRBYDEE<br /><em>Studio</em></h1>
+        <p class="hero-sub">"Hair that looks effortless because we put the effort in."</p>
+        <a href="https://wa.me/447593688394" class="btn btn-primary" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Book Your Appointment
+        </a>
+      </div>
+      <div class="hero-images fade-in fade-in-delay-2">
+        <div class="hero-img-wrap hero-img-1">
+          <img src="9db17825-42f6-4ebc-ba97-303a534b5348.jpg" alt="Braiding style by Dee" loading="eager" />
+        </div>
+        <div class="hero-img-wrap hero-img-2">
+          <img src="defb3b3f-2947-4956-885d-4df9bdb43e0f.JPG" alt="Braiding style by Dee" loading="eager" />
+        </div>
+        <div class="hero-img-wrap hero-img-3">
+          <img src="e090b24d-51a2-4751-8d50-fe08cb732139.jpg" alt="Braiding style by Dee" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-inner">
+      <div class="about-text fade-in">
+        <p class="section-label">Our Story</p>
+        <div class="about-accent-line"></div>
+        <h2>Meet Dee</h2>
+        <p>Dee is a passionate, highly skilled hair braiding artist based in the UK with years of experience creating flawless, long-lasting styles that turn heads and boost confidence. What sets Dee apart is her meticulous attention to detail, a gentle technique that always prioritises hair health, and her extraordinary ability to bring each client's unique vision to life.</p>
+        <p>Whether you're after a sleek, low-maintenance everyday look or a jaw-dropping statement style for a special occasion, Dee's signature touch delivers every time. Clients travel from across the city — and beyond — just to sit in her chair.</p>
+        <p>When you book with HAIRBYDEE Studio, you're not just getting your hair done. You're getting a full, elevated experience — one that leaves you feeling like the most beautiful version of yourself.</p>
+        <a href="https://wa.me/447593688394" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top: 1rem;">
+          <i class="fab fa-whatsapp"></i> Book Your Appointment
+        </a>
+      </div>
+      <div class="about-visual fade-in fade-in-delay-2">
+        <div class="about-stat">
+          <span class="num">500+</span>
+          <span class="lbl">Happy Clients</span>
+        </div>
+        <div class="about-stat">
+          <span class="num">5★</span>
+          <span class="lbl">Avg. Rating</span>
+        </div>
+        <div class="about-stat">
+          <span class="num">13+</span>
+          <span class="lbl">Signature Styles</span>
+        </div>
+        <div class="about-stat">
+          <span class="num">Hair<br />Health</span>
+          <span class="lbl">Always First</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="section-header fade-in">
+      <p class="section-label">Portfolio</p>
+      <h2>Our Work</h2>
+      <p>Every style is crafted with precision, passion, and an eye for perfection.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="9db17825-42f6-4ebc-ba97-303a534b5348.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="58a60646-3d47-410e-abd3-576c12aa07e1.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="ad7a3bfe-87f7-49fb-a465-0ec7cf5ec4d8 2.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="defb3b3f-2947-4956-885d-4df9bdb43e0f.JPG" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="e3bd8a0d-7036-4dbe-a96b-804d9a67f16f.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="e090b24d-51a2-4751-8d50-fe08cb732139.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SIGNATURE STYLES -->
+  <section class="sig-styles">
+    <div class="section-header fade-in">
+      <p class="section-label">Menu</p>
+      <h2>Signature Styles</h2>
+      <p>Choose your look, we'll make it iconic.</p>
+    </div>
+    <div class="sig-grid">
+      <div class="sig-card fade-in fade-in-delay-1">
+        <div class="sig-card-icon">✨</div>
+        <h3>Knotless Braids</h3>
+        <a href="https://wa.me/447593688394" target="_blank" rel="noopener">Book Now →</a>
+      </div>
+      <div class="sig-card fade-in fade-in-delay-2">
+        <div class="sig-card-icon">🌸</div>
+        <h3>Fulani Braids</h3>
+        <a href="https://wa.me/447593688394" target="_blank" rel="noopener">Book Now →</a>
+      </div>
+      <div class="sig-card fade-in fade-in-delay-3">
+        <div class="sig-card-icon">🌿</div>
+        <h3>Boho Braids</h3>
+        <a href="https://wa.me/447593688394" target="_blank" rel="noopener">Book Now →</a>
+      </div>
+      <div class="sig-card fade-in fade-in-delay-4">
+        <div class="sig-card-icon">👑</div>
+        <h3>Goddess Braids</h3>
+        <a href="https://wa.me/447593688394" target="_blank" rel="noopener">Book Now →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="#" onclick="showPage('prices')" class="btn btn-outline">View All Styles &amp; Prices</a>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header fade-in">
+      <p class="section-label">Reviews</p>
+      <h2>What Our Clients Say</h2>
+      <p>Real experiences from real women who trust us with their hair.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card featured fade-in fade-in-delay-1">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Everything was great, you did a really amazing job with my hair, showed good level of service and honestly me and my mum loved the final result. I love my hair so much — the amount of compliments I received was a lot. My experience with you was lovely as well. I am definitely coming back!"</blockquote>
+        <span class="testi-author">— Satisfied Client</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-2">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I travelled nearly an hour to get here and it was absolutely worth every minute. Dee did my knotless braids and they are so neat and clean — honestly the best I've ever had. She's so gentle too, my scalp didn't hurt at all afterwards. Already booked my next appointment!"</blockquote>
+        <span class="testi-author">— Amara T.</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-3">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Dee did my goddess braids for a wedding and I got so many compliments on the day. The attention to detail is unreal — every braid is so perfect and the style lasted weeks without frizzing. The studio has such a lovely, calm vibe too. I won't go anywhere else now."</blockquote>
+        <span class="testi-author">— Fatima K.</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-1">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I've been going to Dee for months and she's the only one who really takes care of my hair. She always checks in on my hair health before starting and gives great advice on aftercare. My Fulani braids looked absolutely stunning — I couldn't stop smiling."</blockquote>
+        <span class="testi-author">— Jasmine O.</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-2">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Brought my daughter for her first time getting knotless braids and Dee was so patient and sweet with her. The result was beautiful and my daughter felt like a little princess. She's been asking to go back ever since! Highly recommend for kids too."</blockquote>
+        <span class="testi-author">— Priya M.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-name">HAIRBYDEE <span>Studio</span></span>
+          <p>Hair that looks effortless because we put the effort in. Premium braiding services crafted with care.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/hair_by_dee4" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@hair_by_dee4" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/447593688394" class="social-icon" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+            Book Your Appointment
+          </a>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('prices')">Styles &amp; Prices</a></li>
+            <li><a href="#" onclick="showPage('booking')">Booking Policy</a></li>
+            <li><a href="#" onclick="showPage('booking')">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Popular Styles</h4>
+          <ul>
+            <li><a href="https://wa.me/447593688394" target="_blank" rel="noopener">Knotless Braids</a></li>
+            <li><a href="https://wa.me/447593688394" target="_blank" rel="noopener">Goddess Braids</a></li>
+            <li><a href="https://wa.me/447593688394" target="_blank" rel="noopener">Fulani Braids</a></li>
+            <li><a href="https://wa.me/447593688394" target="_blank" rel="noopener">Boho Braids</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HAIRBYDEE Studio. All rights reserved. | Crafted with love ✦</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /PAGE 1 -->
+
+
+<!-- ═══════════════════════════ PAGE 2: PRICES ═══════════════════════════ -->
+<div class="page" id="page-prices">
+
+  <div class="prices-hero fade-in">
+    <p class="section-label">Our Menu</p>
+    <h1>Styles &amp; Prices</h1>
+    <p class="hero-sub" style="font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--white-dim);">Luxury braiding tailored to you</p>
+  </div>
+
+  <div class="prices-grid">
+    <div class="price-card fade-in fade-in-delay-1">
+      <div class="price-card-name">Knotless Braids</div>
+      <div class="price-tag">From £80</div>
+      <p class="price-desc">Scalp-friendly, natural-looking box braids with no tension at the root. Light, comfortable &amp; long-lasting.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-2">
+      <div class="price-card-name">Fulani Braids</div>
+      <div class="price-tag">From £75</div>
+      <p class="price-desc">A stunning blend of cornrows and box braids inspired by the Fulani culture. Intricate, elegant &amp; eye-catching.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-3">
+      <div class="price-card-name">Cornrows</div>
+      <div class="price-tag">From £45</div>
+      <p class="price-desc">Classic and sleek braids laid close to the scalp. A timeless look perfect for any occasion.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-1">
+      <div class="price-card-name">French Curls</div>
+      <div class="price-tag">From £65</div>
+      <p class="price-desc">Soft, romantic curls with a distinctive braided root. Gorgeous for special occasions and everyday glam.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-2">
+      <div class="price-card-name">Natural Hairdo</div>
+      <div class="price-tag">From £50</div>
+      <p class="price-desc">Beautifully styled natural hair — embracing your texture and enhancing your natural beauty.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-3">
+      <div class="price-card-name">Jayda Wayda</div>
+      <div class="price-tag">From £85</div>
+      <p class="price-desc">The iconic Jayda Wayda-inspired style — bold, neat cornrows with a striking, statement finish.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-1">
+      <div class="price-card-name">Boho Braids</div>
+      <div class="price-tag">From £90</div>
+      <p class="price-desc">Effortlessly free-spirited braids with wispy curls woven throughout. Perfect for festivals and celebrations.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-2">
+      <div class="price-card-name">Kids Hair</div>
+      <div class="price-tag">From £35</div>
+      <p class="price-desc">Gentle, child-friendly braiding sessions. We take our time to make every little one feel comfortable &amp; happy.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-3">
+      <div class="price-card-name">Goddess Braids</div>
+      <div class="price-tag">From £95</div>
+      <p class="price-desc">Thick, chunky braids with a regal finish. Commanding, beautiful and completely unforgettable.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-1">
+      <div class="price-card-name">Kinky Twist</div>
+      <div class="price-tag">From £70</div>
+      <p class="price-desc">Textured twists that mimic natural hair beautifully. Low-maintenance, lightweight &amp; stunning.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-2">
+      <div class="price-card-name">Bone Straight</div>
+      <div class="price-tag">From £60</div>
+      <p class="price-desc">Sleek, ultra-smooth hair laid perfectly flat. A polished, high-fashion look for any occasion.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-3">
+      <div class="price-card-name">Mermaid Braids</div>
+      <div class="price-tag">From £100</div>
+      <p class="price-desc">Dramatic, long flowing braids that cascade like waves. A show-stopping style for those who dare to stand out.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <div class="price-card fade-in fade-in-delay-1">
+      <div class="price-card-name">Cassie Braid</div>
+      <div class="price-tag">From £80</div>
+      <p class="price-desc">The iconic half-shaved-inspired cornrow look. Edgy, artistic and absolutely fashion-forward.</p>
+      <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+    </div>
+  </div>
+
+  <p class="price-note fade-in">*Prices are a guide and may vary depending on hair length and complexity. Contact us via WhatsApp for a personalised quote.</p>
+
+  <div class="cta-banner fade-in">
+    <p class="section-label">Ready?</p>
+    <h2>Ready to transform your look?</h2>
+    <p>Send us a message and we'll get you scheduled for your dream hair.</p>
+    <a href="https://wa.me/447593688394" class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Book Your Appointment
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-name">HAIRBYDEE <span>Studio</span></span>
+          <p>Hair that looks effortless because we put the effort in.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/hair_by_dee4" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@hair_by_dee4" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/447593688394" class="social-icon" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Your Appointment</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('prices')">Styles &amp; Prices</a></li>
+            <li><a href="#" onclick="showPage('booking')">Booking &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Book Now</h4>
+          <ul>
+            <li><a href="https://wa.me/447593688394" target="_blank" rel="noopener">WhatsApp Us</a></li>
+            <li><a href="tel:07593688394">Call: 07593 688394</a></li>
+            <li><a href="https://instagram.com/hair_by_dee4" target="_blank" rel="noopener">Instagram DMs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HAIRBYDEE Studio. All rights reserved. | Crafted with love ✦</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /PAGE 2 -->
+
+
+<!-- ═══════════════════════════ PAGE 3: BOOKING ═══════════════════════════ -->
+<div class="page" id="page-booking">
+
+  <div class="booking-hero fade-in">
+    <p class="section-label">Let's Get You Booked</p>
+    <h1>Booking &amp; Contact</h1>
+    <p style="font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--white-dim); margin-top: 0.75rem;">We can't wait to transform your hair.</p>
+  </div>
+
+  <div class="booking-content">
+
+    <!-- POLICY -->
+    <div class="policy-section fade-in">
+      <p class="section-label">Important Information</p>
+      <h2>Booking Policy</h2>
+      <ul class="policy-list">
+        <li>
+          <span class="policy-icon">💳</span>
+          <div class="policy-text">
+            <strong>Deposit Required</strong>
+            A £20 deposit is required to secure your appointment. This confirms your booking and is deducted from your final balance.
+          </div>
+        </li>
+        <li>
+          <span class="policy-icon">🚫</span>
+          <div class="policy-text">
+            <strong>Non-Refundable Deposits</strong>
+            Please note that deposits are strictly non-refundable. We kindly ask that you are certain of your appointment before booking.
+          </div>
+        </li>
+        <li>
+          <span class="policy-icon">⏰</span>
+          <div class="policy-text">
+            <strong>Punctuality</strong>
+            Please arrive on time for your appointment. We have a schedule to keep and want to give every client the attention they deserve.
+          </div>
+        </li>
+        <li>
+          <span class="policy-icon">⚠️</span>
+          <div class="policy-text">
+            <strong>Late Arrivals</strong>
+            Late arrivals may result in your appointment being cancelled or shortened. Please message us in advance if you're running behind.
+          </div>
+        </li>
+        <li>
+          <span class="policy-icon">📵</span>
+          <div class="policy-text">
+            <strong>No-Call / No-Show</strong>
+            Clients who do not show up or fail to cancel in advance will forfeit their deposit. Repeated no-shows may be refused future bookings.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="whatsapp-section fade-in">
+      <p class="section-label">Book Now</p>
+      <h2>Book With Us</h2>
+      <p>The easiest way to book is directly through WhatsApp. Send us a message and we'll get you scheduled!</p>
+      <a href="https://wa.me/447593688394" class="btn btn-whatsapp" target="_blank" rel="noopener" style="font-size: 1rem; padding: 18px 48px;">
+        <i class="fab fa-whatsapp"></i> Book via WhatsApp
+      </a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact-section fade-in">
+      <p class="section-label">Get In Touch</p>
+      <h2>Contact Information</h2>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <p style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 4px;">Phone</p>
+            <a href="tel:07593688394">07593 688394</a> &nbsp;|&nbsp; <a href="tel:07415955919">07415 955919</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-instagram"></i></div>
+          <div>
+            <p style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 4px;">Instagram</p>
+            <a href="https://instagram.com/hair_by_dee4" target="_blank" rel="noopener">@hair_by_dee4</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-tiktok"></i></div>
+          <div>
+            <p style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 4px;">TikTok</p>
+            <a href="https://tiktok.com/@hair_by_dee4" target="_blank" rel="noopener">@hair_by_dee4</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <p style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 4px;">WhatsApp</p>
+            <a href="https://wa.me/447593688394" target="_blank" rel="noopener">Message us directly to book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PAGE 3 GALLERY -->
+  <section class="page3-gallery">
+    <div class="section-header fade-in" style="padding: 0 32px; margin-bottom: 50px;">
+      <p class="section-label">Portfolio</p>
+      <h2>More of Our Work</h2>
+      <p>A glimpse into the magic that happens at HAIRBYDEE Studio.</p>
+    </div>
+    <div class="page3-gallery-grid">
+      <div class="page3-gallery-item fade-in fade-in-delay-1">
+        <img src="58a60646-3d47-410e-abd3-576c12aa07e1.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="page3-gallery-item fade-in fade-in-delay-2">
+        <img src="ad7a3bfe-87f7-49fb-a465-0ec7cf5ec4d8 2.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="page3-gallery-item fade-in fade-in-delay-3">
+        <img src="defb3b3f-2947-4956-885d-4df9bdb43e0f.JPG" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="page3-gallery-item fade-in fade-in-delay-1">
+        <img src="e3bd8a0d-7036-4dbe-a96b-804d9a67f16f.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+      <div class="page3-gallery-item fade-in fade-in-delay-2">
+        <img src="e090b24d-51a2-4751-8d50-fe08cb732139.jpg" alt="Hair by Dee" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3 TESTIMONIALS -->
+  <section class="testimonials" style="border-top: var(--border);">
+    <div class="section-header fade-in">
+      <p class="section-label">Client Love</p>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card featured fade-in fade-in-delay-1">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Everything was great, you did a really amazing job with my hair, showed good level of service and honestly me and my mum loved the final result. I love my hair so much — the amount of compliments I received was a lot. My experience with you was lovely as well. I am definitely coming back!"</blockquote>
+        <span class="testi-author">— Satisfied Client</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-2">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I had my boho braids done and I genuinely cannot stop looking in the mirror. Dee is so talented — the curls woven through are just perfect. She also gave me tips on how to maintain them which I really appreciated. Such a warm and professional experience from start to finish."</blockquote>
+        <span class="testi-author">— Naomi B.</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-3">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I've been getting my hair done for years and I've never had knotless braids this neat. No bumps, no frizz, perfectly sized — you can tell she genuinely cares about her craft. My edges are still intact weeks later! This is the only place I'll be going from now on."</blockquote>
+        <span class="testi-author">— Yemi A.</span>
+      </div>
+      <div class="testi-card fade-in fade-in-delay-1">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Dee is an absolute gem. She made me feel so comfortable and welcome throughout the whole session. My Cassie braid came out even better than the inspo pic I showed her! The booking process was really easy through WhatsApp too. Couldn't recommend more highly."</blockquote>
+        <span class="testi-author">— Chloe R.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-name">HAIRBYDEE <span>Studio</span></span>
+          <p>Hair that looks effortless because we put the effort in.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/hair_by_dee4" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@hair_by_dee4" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/447593688394" class="social-icon" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <a href="https://wa.me/447593688394" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Your Appointment</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('prices')">Styles &amp; Prices</a></li>
+            <li><a href="#" onclick="showPage('booking')">Booking &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Book Now</h4>
+          <ul>
+            <li><a href="https://wa.me/447593688394" target="_blank" rel="noopener">WhatsApp Us</a></li>
+            <li><a href="tel:07593688394">Call: 07593 688394</a></li>
+            <li><a href="https://instagram.com/hair_by_dee4" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HAIRBYDEE Studio. All rights reserved. | Crafted with love ✦</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /PAGE 3 -->
+
+
+<script>
+  // ─── PAGE NAVIGATION ───
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + pageId).classList.add('active');
+    document.querySelectorAll('.nav-link').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === pageId);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Re-trigger animations for new page
+    setTimeout(() => observeAnimations(), 100);
+  }
+
+  // ─── HAMBURGER ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  // ─── INTERSECTION OBSERVER ANIMATIONS ───
+  function observeAnimations() {
+    const elements = document.querySelectorAll('.page.active .fade-in:not(.visible)');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    elements.forEach(el => observer.observe(el));
+  }
+
+  // ─── NAV SCROLL EFFECT ───
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    if (window.scrollY > 60) {
+      nav.style.background = 'rgba(8,8,8,0.98)';
+    } else {
+      nav.style.background = 'rgba(10,10,10,0.92)';
+    }
+  });
+
+  // ─── INIT ───
+  document.addEventListener('DOMContentLoaded', () => {
+    observeAnimations();
+    // Hero images immediately visible
+    document.querySelectorAll('.hero .fade-in').forEach(el => {
+      setTimeout(() => el.classList.add('visible'), 100);
+    });
+  });
+</script>
+
+</body>
+</html>
